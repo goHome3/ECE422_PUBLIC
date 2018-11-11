@@ -5,7 +5,7 @@
 #include "task.h"
 
 #include "../mcc_generated_files/pin_manager.h"
-
+#include "taskSerial.h"
 
 #define taskPRIORITY        1
 #define taskSTACK_SIZE      512
@@ -24,7 +24,7 @@ static portTASK_FUNCTION(vBlinkyTask, pvParameters);
 *****************************************************************************/
 static inline void vCreatNewTasks(unsigned portBASE_TYPE uxPriority)
 {
-    xTaskCreate(vBlinkyTask, (char const*)"taskName", (uint16_t)taskSTACK_SIZE/(uint16_t)(2), NULL, uxPriority, (TaskHandle_t *) NULL );
+    xTaskCreate(vBlinkyTask, (char const*)"taskSerial", (uint16_t)taskSTACK_SIZE/(uint16_t)(2), NULL, uxPriority, (TaskHandle_t *) NULL );
 }
 
 
@@ -33,7 +33,7 @@ static inline void vCreatNewTasks(unsigned portBASE_TYPE uxPriority)
     Public functions implementation.
 
 *****************************************************************************/
-void taskBlinky_init(void)
+void taskSerial_init(void)
 {
     vCreatNewTasks(taskPRIORITY); //create new task
 }
@@ -49,7 +49,7 @@ static portTASK_FUNCTION(vBlinkyTask, pvParameters)
     //===========================================
     while(1)
     {
-        vTaskDelay(500);
-        IO_RB14_Toggle();
+        //vTaskDelay(500);
+        //IO_RB14_Toggle();
     }
 }

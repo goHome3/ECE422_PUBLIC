@@ -1,5 +1,5 @@
-build/default/production/src/main.o:  \
-src/main.c  \
+build/default/production/src/taskSerial.o:  \
+src/taskSerial.c  \
  FreeRTOS/Source/FreeRTOS.h  \
 src/FreeRTOSConfig.h  \
  src/../mcc_generated_files/clock.h  \
@@ -8,13 +8,9 @@ FreeRTOS/Source/projdefs.h  \
 FreeRTOS/Source/deprecated_definitions.h  \
  FreeRTOS/Source/portmacro.h  \
 FreeRTOS/Source/mpu_wrappers.h  \
- FreeRTOS/Source/croutine.h  \
-FreeRTOS/Source/list.h  \
+ FreeRTOS/Source/timers.h  \
 FreeRTOS/Source/task.h  \
- src/../mcc_generated_files/system.h  \
- src/../mcc_generated_files/pin_manager.h  \
-src/app.h  \
-src/FreeRTOSConfig.h  \
- src/taskBlinky.h  \
-src/taskSerial.h  \
-src/heartbeat.h 
+FreeRTOS/Source/list.h  \
+ FreeRTOS/Source/task.h  \
+src/../mcc_generated_files/pin_manager.h  \
+ src/taskSerial.h 

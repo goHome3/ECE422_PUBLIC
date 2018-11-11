@@ -13,6 +13,7 @@
 //RTOS tasks include
 #include "app.h"
 #include "taskBlinky.h"
+#include "taskSerial.h"
 #include "heartbeat.h"
 
 
@@ -53,7 +54,9 @@ int main( void )
     //=========================================================================
     taskBlinky_init();
     taskHeartbeat_Init(mainNUM_FLASH_COROUTINES);
-
+    //taskSerial_init();
+    
+    
     //=========================================================================
     //    FreeRTOS scheduler
     //=========================================================================
