@@ -17,15 +17,16 @@
 *****************************************************************************/
 static portTASK_FUNCTION(vBlinkyTask, pvParameters);
 
+
+
 /*****************************************************************************
-
     FreeRTOS Task implementation
-
 *****************************************************************************/
 static inline void vCreatNewTasks(unsigned portBASE_TYPE uxPriority)
 {
     xTaskCreate(vBlinkyTask, (char const*)"taskName", (uint16_t)taskSTACK_SIZE/(uint16_t)(2), NULL, uxPriority, (TaskHandle_t *) NULL );
 }
+
 
 /*****************************************************************************
 
@@ -34,8 +35,9 @@ static inline void vCreatNewTasks(unsigned portBASE_TYPE uxPriority)
 *****************************************************************************/
 void taskBlinky_init(void)
 {
-    vCreatNewTasks(taskPRIORITY);
+    vCreatNewTasks(taskPRIORITY); //create new task
 }
+
 
 static portTASK_FUNCTION(vBlinkyTask, pvParameters)
 {

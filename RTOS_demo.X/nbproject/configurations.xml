@@ -34,6 +34,7 @@
       <logicalFolder name="f2" displayName="tasks" projectFiles="true">
         <itemPath>src/taskBlinky.h</itemPath>
         <itemPath>src/app.h</itemPath>
+        <itemPath>src/heartbeat.h</itemPath>
       </logicalFolder>
       <itemPath>src/FreeRTOSConfig.h</itemPath>
     </logicalFolder>
@@ -66,6 +67,7 @@
       </logicalFolder>
       <logicalFolder name="f2" displayName="tasks" projectFiles="true">
         <itemPath>src/taskBlinky.c</itemPath>
+        <itemPath>src/heartbeat.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>src/rtos_hooks.c</itemPath>
@@ -89,9 +91,9 @@
         <targetDevice>PIC24FJ256GA702</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PICkit3PlatformTool</platformTool>
+        <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion>1.32</languageToolchainVersion>
+        <languageToolchainVersion>1.35</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -330,6 +332,9 @@
         <C30Global>
         </C30Global>
       </item>
+      <pk4hybrid>
+        <property key="memories.programmemory.ranges" value="0-2aeff"/>
+      </pk4hybrid>
     </conf>
   </confs>
 </configurationDescriptor>

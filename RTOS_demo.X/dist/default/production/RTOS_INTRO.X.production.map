@@ -6,7 +6,7 @@ Tool Name:
 Command:
   -p24FJ256GA702 \
   -o \
-  dist/default/production/RTOS_demo.X.production.elf \
+  dist/default/production/RTOS_INTRO.X.production.elf \
   -Lc:/program files (x86)/microchip/xc16/v1.35/bin/bin/.. \
   -Lc:/program files (x86)/microchip/xc16/v1.35/bin/bin/../../lib \
   -Lc:/program files (x86)/microchip/xc16/v1.35/bin/bin/../../support/PIC24E/gld \
@@ -48,7 +48,7 @@ Command:
   --stackguard=16 \
   --no-force-link \
   --smart-io \
-  -Map=dist/default/production/RTOS_demo.X.production.map \
+  -Map=dist/default/production/RTOS_INTRO.X.production.map \
   --report-mem \
   --memorysummary \
   dist/default/production/memoryfile.xml \
@@ -538,26 +538,26 @@ __FDEVOPT1
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x79a3
+.debug_info       0x000000       0x79b5
  *(.debug_info)
- .debug_info      0x000000        0x923 build/default/production/FreeRTOS/Source/croutine.o
- .debug_info      0x000923        0x43a build/default/production/FreeRTOS/Source/list.o
- .debug_info      0x000d5d        0xc67 build/default/production/FreeRTOS/Source/port.o
- .debug_info      0x0019c4       0x1584 build/default/production/FreeRTOS/Source/queue.o
- .debug_info      0x002f48       0x1cc5 build/default/production/FreeRTOS/Source/tasks.o
- .debug_info      0x004c0d        0xf88 build/default/production/FreeRTOS/Source/timers.o
- .debug_info      0x005b95         0x94 build/default/production/FreeRTOS/Source/portasm_PIC24.o
- .debug_info      0x005c29        0x2da build/default/production/FreeRTOS/Source/heap_1.o
- .debug_info      0x005f03        0x142 build/default/production/mcc_generated_files/system.o
- .debug_info      0x006045        0x415 build/default/production/mcc_generated_files/traps.o
- .debug_info      0x00645a        0x286 build/default/production/mcc_generated_files/clock.o
- .debug_info      0x0066e0        0x150 build/default/production/mcc_generated_files/interrupt_manager.o
- .debug_info      0x006830        0x143 build/default/production/mcc_generated_files/mcc.o
- .debug_info      0x006973        0x2dd build/default/production/mcc_generated_files/pin_manager.o
- .debug_info      0x006c50        0x380 build/default/production/src/taskBlinky.o
- .debug_info      0x006fd0        0x556 build/default/production/src/heartbeat.o
- .debug_info      0x007526        0x32b build/default/production/src/rtos_hooks.o
- .debug_info      0x007851        0x152 build/default/production/src/main.o
+ .debug_info      0x000000        0x924 build/default/production/FreeRTOS/Source/croutine.o
+ .debug_info      0x000924        0x43b build/default/production/FreeRTOS/Source/list.o
+ .debug_info      0x000d5f        0xc68 build/default/production/FreeRTOS/Source/port.o
+ .debug_info      0x0019c7       0x1585 build/default/production/FreeRTOS/Source/queue.o
+ .debug_info      0x002f4c       0x1cc6 build/default/production/FreeRTOS/Source/tasks.o
+ .debug_info      0x004c12        0xf89 build/default/production/FreeRTOS/Source/timers.o
+ .debug_info      0x005b9b         0x95 build/default/production/FreeRTOS/Source/portasm_PIC24.o
+ .debug_info      0x005c30        0x2db build/default/production/FreeRTOS/Source/heap_1.o
+ .debug_info      0x005f0b        0x143 build/default/production/mcc_generated_files/system.o
+ .debug_info      0x00604e        0x416 build/default/production/mcc_generated_files/traps.o
+ .debug_info      0x006464        0x287 build/default/production/mcc_generated_files/clock.o
+ .debug_info      0x0066eb        0x151 build/default/production/mcc_generated_files/interrupt_manager.o
+ .debug_info      0x00683c        0x144 build/default/production/mcc_generated_files/mcc.o
+ .debug_info      0x006980        0x2de build/default/production/mcc_generated_files/pin_manager.o
+ .debug_info      0x006c5e        0x381 build/default/production/src/taskBlinky.o
+ .debug_info      0x006fdf        0x557 build/default/production/src/heartbeat.o
+ .debug_info      0x007536        0x32c build/default/production/src/rtos_hooks.o
+ .debug_info      0x007862        0x153 build/default/production/src/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000       0x101f
@@ -2053,7 +2053,7 @@ LOAD c:/program files (x86)/microchip/xc16/v1.35/bin/bin/../../lib\liblega-pic30
 LOAD c:/program files (x86)/microchip/xc16/v1.35/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files (x86)/microchip/xc16/v1.35/bin/bin/../../lib\liblega-c-elf.a
 END GROUP
-OUTPUT(dist/default/production/RTOS_demo.X.production.elf elf32-pic30)
+OUTPUT(dist/default/production/RTOS_INTRO.X.production.elf elf32-pic30)
 LOAD /CW/_FSEC
 LOAD jump_table
 LOAD default_isr
